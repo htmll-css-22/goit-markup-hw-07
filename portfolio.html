@@ -11,6 +11,8 @@
 
   <!-- Кастомные шрифты -->
   <link rel="stylesheet" href="./css/styles.css">
+  
+  <link rel="stylesheet" href="./css/main.min.css" >
 
 
 </head>
@@ -18,21 +20,21 @@
 <body>
 <!-- Шапка сайта -->
   <header class="header"> 
-  <div class="container">
+  <div class="container header__container">
   <nav class="nav">
-    <a class="logo-header" href="./index.html"><span class="logo-primary">Web</span>Studio</a>  
+    <a class="logo__link" href="./index.html"><span class="logo__text">Web</span>Studio</a>  
       <ul class="nav-list">
-        <li class="nav-item"><a class="nav-link" href="./index.html">Студия</a></li>
-        <li class="nav-item"><a class="nav-link current" href="./index.html">Портфолио</a></li>
-        <li class="nav-item"><a class="nav-link" href="">Контакты</a></li>
+        <li class="nav__item"><a class="link nav__link" href="./index.html">Студия</a></li>
+        <li class="nav__item"><a class="link nav__link nav__link--current" href="./index.html">Портфолио</a></li>
+        <li class="nav__item"><a class="link nav__link" href="">Контакты</a></li>
       </ul>
       </nav>
-      <ul class="contact-list">
-          <li class="item"><a class="header-mail link" href="mailto:info@example.com"><svg class="icon-mail" width="16"
+      <ul class="contacts__list">
+          <li class="contacts__item"><a class="contacts__link link" href="mailto:info@example.com"><svg class="contacts__icon" width="16"
                 height="12">
                 <use href="./images/symbol-defs.svg#icon-mail"></use>
               </svg>info@example.com</a></li>
-          <li class="item"><a class="header-phone link" href="tel:+380991111111"><svg class="icon-mob" width="10" height="16">
+          <li class="contacts__item"><a class="contacts__link link" href="tel:+380991111111"><svg class="contacts__icon" width="10" height="16">
                 <use href="./images/symbol-defs.svg#icon-mob"></use>
               </svg>+38 099 111 11 11</a></li>
       </ul>
@@ -42,7 +44,7 @@
 <main class="hero">
 <section class="galerry">
   <div class="container">
-    <h1 class="hidden" >Галерея</h1>
+    <h1 class="visually-hidden" >Галерея</h1>
     <ul class="list">
       <li class="item">
       <button class="galerry-btn" type="button">Все</button>
@@ -256,7 +258,7 @@
             <form class="subscribe-form" autocomplete="off">
               <label for="footer-email" class="hidden-caption">Почта</label>
               <input class="subscribe-form-email" name="email" type="email" id="footer-email" placeholder="E-mail">
-              <button class="hero-btn" type="submit">
+              <button class="hero__btn" type="submit">
                 <span class="footer-button-content"> Подписаться 
                   <svg class="footer-button-icon" width="24" height="24">
                     <use href="./images/symbol-defs.svg#icon-send"></use>
