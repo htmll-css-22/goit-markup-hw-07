@@ -64,6 +64,7 @@ ul {
   display: -ms-flexbox;
   display: flex;
   margin: 0;
+  padding: 0;
 }
 
 li {
@@ -784,7 +785,6 @@ link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  margin-left: 50px;
 }
 
 .contacts__link {
@@ -801,6 +801,10 @@ link {
 .contacts__link:hover, .contacts__link:focus {
   color: var(--accent-cl);
   fill: var(--accent-cl);
+}
+
+.contacts__item:not(:last-child) {
+  margin-right: 50px;
 }
 
 .contacts__list {
@@ -826,7 +830,7 @@ link {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
-  height: 120px;
+  height: 12px;
   border-radius: 4px;
 }
 
